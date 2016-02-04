@@ -15,8 +15,12 @@ la un n pași de ea în alfabet (unde este n este un număr întreg cunoscut
 """
 
 def cipher(word):
-	word = word.lower()
-	return ord(word[0])%97
+    """
+    :param word: the word to decipher to "ave"
+    :return: the number used for encryption
+    """
+    word = word.lower()
+    return ord(word[0])%97
 
 
 def decripteaza(mesaj):
