@@ -5,10 +5,18 @@ virtualenv:
   system_site_packages: true
 
 before_install:
+  - export filename="shellcheck_0.3.7-5_amd64.deb"
+  - wget "http://ftp.debian.org/debian/pool/main/s/shellcheck/$filename"
+  - sudo dpkg -i "$filename"
   - pip install pip --upgrade
 
 install:
   - pip install pylint
+  - pip install bashate
+  - pip install flake8
 
 script:
-  - for scriptura in $(find solutii | grep ".py$"); do pylint $scriptura; done
+  - for script in $(find solutii | grep ".py$"); do pylint "$script"; done
+  - for script in $(find solutii | grep ".sh"); do bashate "$script" || exit 1; done
+  - for script in $(find solutii | grep ".py$"); do flake8 "$script"; done
+  - for script in $(find solutii | grep ".sh"); do shellcheck "$script" || exit 1; done
