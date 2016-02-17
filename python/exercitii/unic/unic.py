@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # *-* coding: UTF-8 *-*
+
 """În laboratorul lui Tuxy toți cercetătorii au asignat un id
 de utilizator.
 
