@@ -7,19 +7,11 @@ ca argument este o putere a lui 2.
 
 def putere(numar):
     """Funcție ce determină dacă un număr este putere a lui 2."""
-    if numar & numar - 1 == 0:
-        return True
+    # O altă manieră de rezolvare ar putea fi:
+    # return (numar & numar - 1) == 0
 
-    return False
-
-
-def putere(numar):
-    """Funcție ce determină dacă un număr este putere a lui 2."""
     numar_binar = "{0:b}".format(numar)
-    if numar_binar.count("1") == 1:
-        return True
-    else:
-        return False
+    return numar_binar.count("1") == 1
 
 
 if __name__ == "__main__":

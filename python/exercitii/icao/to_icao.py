@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # *-* coding: UTF-8 *-*
-
 """
 Organizaţia Internaţională a Aviaţiei Civile propune un alfabet în care
 fiecărei litere îi este asignat un cuvânt pentru a evita problemele în
@@ -18,6 +17,7 @@ Următoarea sarcină ți-a fost asignată:
 
 Mai jos găsiți un dicționar ce conține o versiune a alfabetului ICAO:
 """
+# pylint: disable=unused-argument
 
 ICAO = {
     'a': 'alfa', 'b': 'bravo', 'c': 'charlie', 'd': 'delta', 'e': 'echo',
@@ -29,7 +29,7 @@ ICAO = {
 }
 
 
-def icao(mesaj):
+def icao():
     """Funcția va primi calea mesajul ce trebuie transmis și
     va genera un fișier numit mesaj.icao_intrare ce va conține
     mesajul scris folosind alfabetul ICAO.
@@ -38,4 +38,4 @@ def icao(mesaj):
 
 
 if __name__ == "__main__":
-    icao("Mesajul ce trebuie transmis")
+    icao()
