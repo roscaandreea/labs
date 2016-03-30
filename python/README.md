@@ -4,21 +4,25 @@ Acest depozit de cod conține o serie de exerciții ce pot fi folosite în cadru
 
 ###Prezentări
 
-- [Prezentare introductivă](python/prezentare/Introducere.md)
-    - Prezentarea limbajului Python
-    - Pregătirea mediului de lucru
-    - Familiarizarea cu limbajul
-        - Tipuri de date (int, float, *long*, str)
-        - Operatori
-        - Comentarii
-        - Funcții built-in (print, input, *raw_input*, open)
-        - Instrucțiuni condiționale (if - elif - else)
-        - Structuri de date
-            - Liste
+- [Prezentare introductivă](prezentare/Introducere.md)
+- Prezentarea limbajului Python
+- Pregătirea mediului de lucru
+- Familiarizarea cu limbajul
+    - Tipuri de date (int, float, *long*, str)
+    - Operatori
+    - Comentarii
+    - Structuri de date
+        - Liste și Tuples
+        - Referințe
+        - Dictionare
+    - Funcții built-in (print, input, *raw_input*, open)
+    - Instrucțiuni condiționale (if - elif - else)
+    - Instrucțiuni repetitive (for, while)
+
 
 ###Exerciții rezolvate
 
-- [Introducere în limbajul Python](python/prezentare/Introducere.md)
+- [Introducere în limbajul Python](prezentare/Introducere.md)
     - [Determinarea maximului](python/exemple/maxim.py)
     - [Verifică dacă numărul este palindrom](python/exemple/palindrom.py)
     - [Verifică dacă numărul este par](python/exemple/par.py)
@@ -39,4 +43,6 @@ Acest depozit de cod conține o serie de exerciții ce pot fi folosite în cadru
     - [paranteze](python/exercitii/paranteze)
         - Dificultate: medie
     - [grep](python/exercitii/grep)
+        - Dificultate: medie
+    - [reminder](python/exercitii/reminder)
         - Dificultate: medie
