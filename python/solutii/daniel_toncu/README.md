@@ -1,1 +1,0 @@
-Aici sunt solutiile problemelor. Daniel Toncu.
